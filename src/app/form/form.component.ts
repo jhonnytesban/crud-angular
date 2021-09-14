@@ -17,8 +17,13 @@ export class FormComponent implements OnInit {
   }
 
   addUser(){
-    this.data.addNewUser(this.user)
-    this.user = this.data.newUser()
+    if (this.user.name.trim() === '' || this.user.job.trim() === '') {
+      alert('Los campos están vacíos')
+      this.user = this.data.newUser()
+    } else {
+      this.data.addNewUser(this.user)
+      this.user = this.data.newUser()
+    }
   }
 
 }

@@ -15,7 +15,11 @@ export class ListComponent implements OnInit {
 
   ngOnInit(): void {
     this.users = this.data.getUsers()
-    console.log(this.users)
+  }
+
+  viewUser(user: User) {
+    this.data.deleteUser(user)
+    this.users = this.data.getUsers()
   }
 
 }

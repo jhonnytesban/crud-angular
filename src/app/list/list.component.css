@@ -1,0 +1,20 @@
+.title{
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+.table{
+  margin: auto;
+}
+.table{
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+.head__cell{
+  text-align: center;
+  padding: 1rem;
+}
+.cell{
+  width: 5rem;
+  height: 2rem;
+  border: 1px solid gray;
+}

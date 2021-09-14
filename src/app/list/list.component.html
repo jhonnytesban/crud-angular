@@ -1,15 +1,17 @@
 <h2 class="title">Lista</h2>
 <table class="table">
   <thead class="table-head">
-    <th class="head__celd">Id</th>
-    <th class="head__celd">Nombre</th>
-    <th class="head__celd">Profesión</th>
+    <th class="head__cell">Id</th>
+    <th class="head__cell">Nombre</th>
+    <th class="head__cell">Profesión</th>
+    <th class="head__cell">Acción</th>
   </thead>
   <tbody class="table-body">
     <tr class="row"*ngFor="let user of users">
       <td class="cell" >{{user.id}}</td>
       <td class="cell" >{{user.name}}</td>
       <td class="cell" >{{user.job}}</td>
+      <td class="cell" ><button (click)="viewUser(user)">Eliminar</button></td>
     </tr>
   </tbody>
 </table>

@@ -44,4 +44,9 @@ export class DataService {
     }
   }
 
+  deleteUser(user: User) {
+    // alert(user.id)
+    this.users = this.users.filter(el => el.id !== user.id)
+  }
+
 }
